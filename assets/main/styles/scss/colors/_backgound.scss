@@ -1,0 +1,8 @@
+$body-background: #f3f3f3;
+$before-background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 100%);
+$box-background: #101010;
+:root {
+    --body-background: #{$body-background};
+    --before-background: #{$before-background};
+    --box-background: #{$box-background};
+}

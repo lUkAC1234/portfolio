@@ -1,0 +1,45 @@
+{% load static %}
+<header class="header" id="header">
+    <nav class="site-navbar">
+        <audio loop class="audioPlayer" id="audioPlayer" autoplay>
+            <source src="{% static 'main/audios/preloader.mp3' %}" type="audio/mp3">
+        </audio>
+        <div class="header-left-side">
+            <div class="header-logo-part">
+                <a href="/#mainInfo">
+                    <img src="{% static 'main/images/logo/logo.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="header-links-container">
+            <ul class="header-links-wrapper">
+                <li><a class="header-link" href="/#mainInfo">Home</a></li>
+                <li><a class="header-link" href="/#aboutMe">About me</a></li>
+                <li><a class="header-link" href="/#skills">Skills</a></li>
+                <li><a class="header-link" href="/#projects">Projects</a></li>
+                <li><a class="header-link" href="https://devcybercode.com/website/blogs/list">Blog</a></li>
+            </ul>
+        </div>
+        <div class="header-right-side">
+            <a href="/#contact" class="header-btn-contact">Let's talk</a>
+            <button id="audioPlay" class="header-btn-audio">
+                <div class="audio-circle"></div>
+                <div class="rect-container">
+                    <svg width="20" height="20" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.599976" y="1.06665" width="1.4" height="10" fill="#F2F2F2" class="rect1-anim"></rect>
+                        <rect x="9" y="1.06665" width="1.4" height="10" fill="#F2F2F2" class="rect2-anim"></rect>
+                        <rect x="4.79999" y="1.06665" width="1.4" height="10" fill="#F2F2F2" class="rect3-anim"></rect>
+                    </svg>
+                </div>
+                <div class="no-sound">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </button>
+            <div class="menu-controller-container">
+                <button class="menu-icon" id="menu-icon">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>

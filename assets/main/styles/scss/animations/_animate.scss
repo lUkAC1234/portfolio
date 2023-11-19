@@ -1,0 +1,100 @@
+/*-- Audio Animation --*/
+.rect-container {
+    width: fit-content;
+    transform: rotate(180deg);
+}
+
+.rect1-anim {
+    animation: rect1anim 1s ease-in-out infinite alternate;
+}
+
+.rect2-anim {
+    animation: rect2anim 1s ease-in-out infinite alternate;
+}
+
+.rect3-anim {
+    animation: rect3anim 1s ease-in-out infinite alternate;
+}
+
+@keyframes rect1anim {
+    0% {
+        height: 5.8px;
+    }
+
+    50% {
+        height: 8px;
+    }
+
+    100% {
+        height: 1px;
+    }
+}
+
+@keyframes rect2anim {
+    0% {
+        height: 5.8px;
+    }
+
+    50% {
+        height: 6px;
+    }
+
+    100% {
+        height: 4px;
+    }
+}
+
+@keyframes rect3anim {
+    0% {
+        height: 5.8px;
+    }
+
+    50% {
+        height: 4px;
+    }
+
+    100% {
+        height: 8px;
+    }
+} 
+/*--/ Audio Animation /--*/
+
+/*-- Gradient Text Animation --*/
+.gradient-background {
+    background: linear-gradient(-45deg,#6bc5f8, #cf59e6,#6bc5f8,#cf59e6);
+    background-size: 400% 400%;
+    animation: gradientTextAnimation 4s ease infinite;
+}
+.gradient-text {
+    background: linear-gradient(-45deg,#6bc5f8, #cf59e6,#6bc5f8,#cf59e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradientTextAnimation 4s ease infinite;
+}
+
+.gradient-text-second {
+    background: linear-gradient(90deg, rgb(176, 243, 241), rgb(255, 207, 223));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradientTextAnimation 4s ease infinite;
+}
+
+@keyframes gradientTextAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0, 50%;
+    }
+}
+
+/*--/ Gradient Text Animation /--*/

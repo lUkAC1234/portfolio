@@ -1,0 +1,54 @@
+.link-with-underline-style {
+    position: relative;
+    color: var(--white);
+    font-family: var(--grotext-sans);
+    width: fit-content;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        bottom: -0.25rem;
+        left: 0;
+        background: var(--white);
+        transition: all 0.4s ease;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+    
+}
+
+.link-with-underline-style-dark {
+    @extend .link-with-underline-style;
+    color: var(--purple);
+    &::after {
+        background: var(--black);
+    }
+}
+
+.before-component-style {
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 30.269rem;
+        opacity: 0.8;
+        background: var(--before-background);
+        filter: blur(100px);
+        width: 10rem;
+        height: 10rem;
+        inset: 0;
+    }
+
+    &::after {
+        right: 0;
+        bottom: 0;
+        left: unset;
+        top: unset;
+    }
+}
