@@ -14,7 +14,7 @@ class index(CreateView):
         data = super().get_context_data(**kwargs)
         data['projects'] = ProjectsModel.objects.all()[:6]
         return data
-
+    
 class ProjectsView(ListView):
     model = ProjectsModel
     template_name = "pages/project.html"

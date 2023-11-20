@@ -170,12 +170,13 @@
         justify-content: center;
         background: var(--white);
         z-index: var(--z-index-10);
-        width: 100%;
+        width: 90%;
         height: 100vh;
-        inset: 0;
         transform: scaleX(0);
         transform-origin: right;
         transition: 0.4s all ease-in-out;
+        right: 0;
+        top: 0;
 
         .header-links-wrapper {
             flex-flow: column;

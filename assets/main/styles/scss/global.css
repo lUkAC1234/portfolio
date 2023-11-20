@@ -509,12 +509,13 @@
     justify-content: center;
     background: var(--white);
     z-index: var(--z-index-10);
-    width: 100%;
+    width: 90%;
     height: 100vh;
-    inset: 0;
     transform: scaleX(0);
     transform-origin: right;
     transition: 0.4s all ease-in-out;
+    right: 0;
+    top: 0;
   }
   .header-links-container .header-links-wrapper {
     flex-flow: column;
@@ -1029,120 +1030,6 @@ select:-webkit-autofill:focus {
   bottom: 0;
   left: unset;
   top: unset;
-}
-
-.flex-row-justify-align-start, .flex-column-justify-align-start {
-  display: flex;
-  justify-content: flex-start;
-  align-items: start;
-}
-
-.flex-row-justify-align-center, .flex-column-justify-align-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-row-justify-align-end, .flex-column-justify-align-end {
-  display: flex;
-  justify-content: flex-end;
-  align-items: end;
-}
-
-.flex-row-center-between, .flex-column-center-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flex-row-center-around, .flex-column-center-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.flex-row-center-evenly, .flex-column-center-evenly {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.flex-row-justify-between, .flex-column-justify-between {
-  display: flex;
-  justify-content: space-between;
-}
-
-.flex-row-justify-around, .flex-column-justify-around {
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-row-justify-evenly, .flex-column-justify-evenly {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.flex-row-align-start, .flex-column-align-start {
-  display: flex;
-  align-items: start;
-}
-
-.flex-row-align-center, .flex-column-align-center {
-  display: flex;
-  align-items: center;
-}
-
-.flex-row-align-end, .flex-column-align-end {
-  display: flex;
-  align-items: end;
-}
-
-.flex-column-justify-align-start {
-  flex-flow: column;
-}
-
-.flex-column-justify-align-center {
-  flex-flow: column;
-}
-
-.flex-column-justify-align-end {
-  flex-flow: column;
-}
-
-.flex-column-center-around {
-  flex-flow: column;
-}
-
-.flex-column-center-between {
-  flex-flow: column;
-}
-
-.flex-column-center-evenly {
-  flex-flow: column;
-}
-
-.flex-column-justify-between {
-  flex-flow: column;
-}
-
-.flex-column-justify-around {
-  flex-flow: column;
-}
-
-.flex-column-justify-evenly {
-  flex-flow: column;
-}
-
-.flex-column-align-start {
-  flex-flow: column;
-}
-
-.flex-column-align-center {
-  flex-flow: column;
-}
-
-.flex-column-align-end {
-  flex-flow: column;
 }
 
 /*-- Audio Animation --*/
