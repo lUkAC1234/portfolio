@@ -11,7 +11,7 @@
     <section class="main-info-section" id="mainInfo">
         <div class="main-info-container">
             <div class="main-info-image-container">
-                <img src="{% static 'main/images/content/person.jpg' %}" alt="">
+                <img src="{% static 'main/images/content/mainperson.jpeg' %}" alt="">
             </div>
             <h1 class="title-text">
                 turning ideas into real life <span class="gradient-text">products</span> is my calling.
@@ -23,7 +23,7 @@
     <section class="about-me-section" id="aboutMe">
         <div class="about-me-container">
             <div class="about-me-image-container">
-                <img src="{% static 'main/images/content/aboutme.png' %}" alt="">
+                <img src="{% static 'main/images/content/person600.png' %}" alt="">
             </div>
             <div class="about-me-content">
                 <h1 class="about-me-title">About me</h1>
@@ -120,21 +120,18 @@
                 {% csrf_token %}
                 <div class="two-input-container">
                     <div class="input-container">
-                        <label for="">First name</label>
-                        <input type="text" placeholder="John" name="first_name">
+                        <input type="text" placeholder="First name" name="first_name">
                     </div>
                     <div class="input-container">
-                        <label for="">Last name</label>
-                        <input type="text" placeholder="Martin" name="last_name">
+                        <input type="text" placeholder="Last name" name="last_name">
                     </div>
                 </div>
                 <div class="one-input-container">
                     <div class="input-container">
-                        <label for="">Message</label>
-                        <textarea placeholder="Hello I want..." name="description"></textarea>
+                        <textarea placeholder="Message" name="description"></textarea>
                     </div>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" class="gradient-background">Submit</button>
             </form>
         </div>
     </section>
