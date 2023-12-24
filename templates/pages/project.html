@@ -8,16 +8,16 @@
 {% block content %}
 <main class="main project-main">
     <section class="all-projects-section">
-        <h1 class="all-projects-main-title">Here is a list of all <span class="gradient-text">completed</span> projects</h1>
+        <h1 class="all-projects-main-title fade slideInLeft" data-wow-duration="1.5s">Here is a list of all <span class="gradient-text">completed</span> projects</h1>
         <div class="all-projects-container">
             {% for object in object_list %}
-            <div class="all-projects-column">
+            <div class="all-projects-column fade fadeInDown">
                 <div class="all-project-content">
                     <h1 class="all-project-title gradient-text">{{ object.title }}</h1>
                     <p class="all-project-text">{{ object.short_description }}</p>
                 </div>
                 <div class="all-project-link">
-                    <a href="{{ object.link }}"><i class="fa-solid fa-link"></i></a>
+                    <a target="_blank" href="{{ object.link }}"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
             {% endfor %}

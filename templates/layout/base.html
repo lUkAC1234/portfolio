@@ -17,6 +17,10 @@
 
     <link rel="shortcut icon" href="{% static 'main/images/logo/footerlogo.svg' %}" type="image/svg+xml"/>
 
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <!-- Animation End -->
+
     {% block title %}{% endblock %}
 </head>
 
@@ -33,6 +37,19 @@
     {# ------------------------------------------------------------------------------------------- #}
     {# Scripts #}
     <script src="{% static 'main/scripts/js/main.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+            wow = new WOW({
+                boxClass: 'fade',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true
+            });
+            wow.init();
+        });
+    </script>
     {% block js_block %}
 
     {% endblock %}

@@ -76,7 +76,7 @@
 .about-me-content {
     display: grid;
     place-content: center;
-    width: min(100%, 30rem);
+    width: min(100%, 32rem);
 
     .about-me-title {
         @extend .section-title-style;
@@ -85,6 +85,9 @@
     .about-me-text {
         font-size: 1.25rem;
         font-family: var(--poppins);
+        background: var(--box-background);
+        padding: 1rem;
+        border-radius: 0.5rem;
     }
 }
 
@@ -130,6 +133,9 @@
         font-family: var(--poppins);
         width: min(100%, 65rem);
         font-size: 1.125rem;
+        background: var(--box-background);
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
     }
 }
 
@@ -148,7 +154,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    background-color: var(--box-background);
+    background: var(--box-background);
     padding: 1rem;
     border-radius: 0.5rem;
 
@@ -175,7 +181,7 @@
 
 .project-main-title {
     @extend .section-title-style;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .projects-container {
@@ -313,10 +319,14 @@
         padding: 0.5rem;
         border-radius: 0.25rem;
         font-family: var(--poppins);
-        font-size: 0.9rem;
+        font-size: 1rem;
         transition: all 0.3s ease;
         color: var(--black);
         resize: none;
+
+        &::placeholder {
+            font-size: 0.85rem;
+        }
 
         &:focus {
             border-color: #cf59e6;

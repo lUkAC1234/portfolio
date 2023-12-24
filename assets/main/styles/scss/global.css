@@ -62,11 +62,14 @@
 .about-me-content {
   display: grid;
   place-content: center;
-  width: min(100%, 30rem);
+  width: min(100%, 32rem);
 }
 .about-me-content .about-me-text {
   font-size: 1.25rem;
   font-family: var(--poppins);
+  background: var(--box-background);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -99,6 +102,9 @@
   font-family: var(--poppins);
   width: min(100%, 65rem);
   font-size: 1.125rem;
+  background: var(--box-background);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .skills-wrapper {
@@ -118,7 +124,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  background-color: var(--box-background);
+  background: var(--box-background);
   padding: 1rem;
   border-radius: 0.5rem;
 }
@@ -140,7 +146,7 @@
 }
 
 .project-main-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .projects-container {
@@ -260,10 +266,14 @@
   padding: 0.5rem;
   border-radius: 0.25rem;
   font-family: var(--poppins);
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
   color: var(--black);
   resize: none;
+}
+.input-container input::placeholder,
+.input-container textarea::placeholder {
+  font-size: 0.85rem;
 }
 .input-container input:focus,
 .input-container textarea:focus {
@@ -661,7 +671,7 @@ footer {
 :root {
   --body-background: #f3f3f3;
   --before-background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%);
-  --box-background: #101010;
+  --box-background: linear-gradient(#0d0d0d, #151515);
 }
 
 @font-face {

@@ -8,7 +8,7 @@
 {% block content %}
 <main class="main">
     
-    <section class="main-info-section" id="mainInfo">
+    <section class="main-info-section fade fadeInDown" id="mainInfo">
         <div class="main-info-container">
             <div class="main-info-image-container">
                 <img src="{% static 'main/images/content/mainperson.jpeg' %}" alt="">
@@ -22,10 +22,10 @@
 
     <section class="about-me-section" id="aboutMe">
         <div class="about-me-container">
-            <div class="about-me-image-container">
+            <div class="about-me-image-container fade slideInLeft" data-wow-duration="1.5s">
                 <img src="{% static 'main/images/content/person600.png' %}" alt="">
             </div>
-            <div class="about-me-content">
+            <div class="about-me-content fade slideInRight" data-wow-duration="1.5s">
                 <h1 class="about-me-title">About me</h1>
                 <p class="about-me-text">Hello stranger! 👋, my name is Shaxobiddin and I am a <span class="gradient-text">fullstack web developer</span>. I create websites that will help people develop their business and give them the opportunity to show themselves on the Internet <a href="{% static 'main/images/resume/myresume.pdf' %}" class="gradient-text">My Resume</a> 🤙</p>
             </div>
@@ -34,54 +34,54 @@
 
     <section class="skills-section" id="skills">
         <div class="skills-container">
-            <h1 class="skills-main-title">My skills</h1>
-            <p class="skills-main-text">I have been working for a long time to reach the level I have now, I have been working in the <span class="gradient-text">programming world</span> for more than 3 years and during this time I have gained a lot of experience.</p>
+            <h1 class="skills-main-title fade fadeInDown" data-wow-duration="1.5s">My skills</h1>
+            <p class="skills-main-text fade slideInLeft">I have been working for a long time to reach the level I have now, I have been working in the <span class="gradient-text">programming world</span> for more than 3 years and during this time I have gained a lot of experience.</p>
             <div class="skills-wrapper">
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">Python</h1>
                     <img src="{% static 'main/images/technologies/python.webp' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">Django</h1>
                     <img src="{% static 'main/images/technologies/djangoicon.svg' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">HTML5</h1>
                     <img src="{% static 'main/images/technologies/html.svg' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">Css</h1>
                     <img src="{% static 'main/images/technologies/css.svg' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">Sass</h1>
                     <img src="{% static 'main/images/technologies/sass.svg' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">JavaScript</h1>
                     <img src="{% static 'main/images/technologies/javascript.svg' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">Vue.js</h1>
                     <img src="{% static 'main/images/technologies/vue.svg' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">Bootstrap</h1>
                     <img src="{% static 'main/images/technologies/bootstrap.ico' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">React</h1>
                     <img src="{% static 'main/images/technologies/react.svg' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">PostgreSQL</h1>
                     <img src="{% static 'main/images/technologies/postgresql.svg' %}" alt="" class="skill-logo">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">DRF</h1>
                     <img src="{% static 'main/images/technologies/rest.svg' %}" alt="" class="skill-logo" style="background: none;">
                 </div>
-                <div class="skill-column">
+                <div class="skill-column fade fadeInDown" data-wow-duration="1.25s">
                     <h1 class="skill-title">Github</h1>
                     <img src="{% static 'main/images/technologies/github.svg' %}" alt="" class="skill-logo">
                 </div>
@@ -90,33 +90,33 @@
     </section>
 
     <section class="projects-section" id="projects">
-        <h1 class="project-main-title gradient-text">My projects</h1>
+        <h1 class="project-main-title fade slideInLeft" data-wow-duration="1.5s"><span class="gradient-text">My Projects</span></h1>
         <div class="projects-container">
             {% for object in projects %}
-            <div class="project-column">
+            <div class="project-column fade fadeInDown" data-wow-duration="1.25s">
                 <div class="project-image-container">
                     <img src="{{ object.image.url }}" alt="">
                 </div>
                 <div class="project-content">
                     <h1 class="project-title">{{ object.title }}</h1>
                     <p class="project-description">{{ object.short_description }}</p>
-                    <a href="{{ object.link }}" class="project-link">View project</a>
+                    <a target="_blank" href="{{ object.link }}" class="project-link">View project</a>
                 </div>
             </div>
             {% endfor %}
         </div>
-        <div class="view-all-project-container">
+        <div class="view-all-project-container fade fadeInUp">
             <a href="{% url 'main:projects' %}" class="view-all-list">View all projects</a>
         </div>
     </section>
 
     <section class="contact-section" id="contact">
         <div class="contact-container">
-            <div class="contact-title-content">
+            <div class="contact-title-content fade slideInLeft" data-wow-duration="1.5s">
                 <h1 class="contact-title">Get in touch</h1>
                 <p class="contact-text">if you want to ask me a <span class="gradient-text-second">question</span>, or if there are any problems, text me 😊</p>
             </div>
-            <form class="contact-form" method="POST">
+            <form class="contact-form fade fadeInDown" method="POST">
                 {% csrf_token %}
                 <div class="two-input-container">
                     <div class="input-container">
@@ -138,22 +138,22 @@
 
     <section class="work-together-section">
         <div class="work-together-contaienr">
-            <h1 class="work-together-title">Sold Yet? 🤙</h1>
-            <p class="work-together-text">Thanks for stopping by, I’m currently looking to join a new team of creative designers and developers. If you think we might be a good fit for one another, send me an <a href="mailto:shaxobiddinzuxriddinov@gmail.com" class="gradient-text">email</a> 📧.</p>
-            <h2 class="work-together-text next"><span class="gradient-text">Dont be a stranger!</span> 👋</h2>
-            <p class="work-connect-text">Connect with me online</p>
+            <h1 class="work-together-title fade slideInLeft" data-wow-duration="1s">Sold Yet? 🤙</h1>
+            <p class="work-together-text fade slideInLeft" data-wow-duration="1s">Thanks for stopping by, I’m currently looking to join a new team of creative designers and developers. If you think we might be a good fit for one another, send me an <a href="mailto:shaxobiddinzuxriddinov@gmail.com" class="gradient-text">email</a> 📧.</p>
+            <h2 class="work-together-text next fade slideInLeft" data-wow-duration="2s"><span class="gradient-text">Dont be a stranger!</span> 👋</h2>
+            <p class="work-connect-text fade slideInLeft" data-wow-duration="2.5s">Connect with me online</p>
             <div class="connect-links-container">
-                <div class="connect-link-column">
-                    <a href="https://github.com/lUkAC1234">👾 GitHub</a>
+                <div class="connect-link-column fade fadeInUp" data-wow-duration="3s">
+                    <a target="_blank" href="https://github.com/lUkAC1234">👾 GitHub</a>
                 </div>
-                <div class="connect-link-column">
-                    <a href="https://www.linkedin.com/in/shaxobiddin-zuxriddinov-473110294/">💼 LinkedIn</a>
+                <div class="connect-link-column fade fadeInUp" data-wow-duration="3.5s">
+                    <a target="_blank" href="https://www.linkedin.com/in/shaxobiddin-zuxriddinov-473110294/">💼 LinkedIn</a>
                 </div>
-                <div class="connect-link-column">
-                    <a href="https://t.me/CyberCodeOwner">🐦 Telegram</a>
+                <div class="connect-link-column fade fadeInUp" data-wow-duration="4s">
+                    <a target="_blank" href="https://t.me/CyberCodeOwner">🐦 Telegram</a>
                 </div>
-                <div class="connect-link-column">
-                    <a href="https://www.instagram.com/i.really_miss.you_/">📸 instagram</a>
+                <div class="connect-link-column fade fadeInUp" data-wow-duration="4.5s">
+                    <a target="_blank" href="https://www.instagram.com/i.really_miss.you_/">📸 instagram</a>
                 </div>
             </div>
         </div>
