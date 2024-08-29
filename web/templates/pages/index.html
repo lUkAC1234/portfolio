@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="main-info-image-container fade fadeInRight" data-wow-duration="2s">
-                <img src="{% static 'main/images/content/mainperson.png' %}" alt="">
+                <img src="{% static 'main/images/content/mainperson.png' %}" alt="Моя сидящая анимированная фотка">
             </div>
         </div>
     </section>
@@ -88,7 +88,7 @@
                     <h3 class="skill-title">PostgreSQL</h3>
                 </div>
                 <div class="skill-column fade fadeInUp">
-                    <img src="{% static 'main/images/technologies/drf.svg' %}" alt="">
+                    <img src="{% static 'main/images/technologies/drf.svg' %}" alt="Фотография технологии rest">
                     <h3 class="skill-title">Rest</h3>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     <div class="experience-head-container">
                         <div class="experience-head-left-side">
                             <div class="experience-head-logo">
-                                <img src="" alt="">
+                                <img src="" alt="Фотка компании">
                                 <i class="fa-brands fa-apple"></i>
                             </div>
                             <h2 class="experience-head-title">FullStack Developer</h2>
@@ -120,7 +120,7 @@
                     <div class="experience-head-container">
                         <div class="experience-head-left-side">
                             <div class="experience-head-logo">
-                                <img src="" alt="">
+                                <img src="" alt="Фотка компании">
                                 <i class="fa-brands fa-apple"></i>
                             </div>
                             <h2 class="experience-head-title">FullStack Developer</h2>
@@ -137,8 +137,7 @@
                     <div class="experience-head-container">
                         <div class="experience-head-left-side">
                             <div class="experience-head-logo">
-                                <img src="" alt="">
-                                <i class="fa-brands fa-apple"></i>
+                                <img src="" alt="Фотка компании">
                             </div>
                             <h2 class="experience-head-title">FullStack Developer</h2>
                         </div>
@@ -157,7 +156,7 @@
     <section class="about-me-section" id="aboutMe">
         <div class="about-me-container">
             <div class="about-me-image-container">
-                <img src="{% static 'main/images/content/aboutme.svg' %}" alt="">
+                <img src="{% static 'main/images/content/aboutme.svg' %}" alt="Моя анимированная фотка">
             </div>
             <div class="about-me-text-container">
                 <h2 class="about-me-title">Обо мне</h2>
@@ -173,24 +172,28 @@
     </section>
 
     <section class="projects-section" id="projects">
-        <h1 class="project-main-title fade slideInLeft" data-wow-duration="1.5s"><span class="gradient-text">My
-                Projects</span></h1>
         <div class="projects-container">
-            {% for object in projects %}
-            <div class="project-column" data-wow-duration="1.25s">
-                <div class="project-image-container">
-                    <img src="{{ object.image.url }}" alt="">
+            <h2 class="project-main-title">Мои проекты</h2>
+            <div class="projects-wrapper">
+                {% for object in projects %}
+                <div class="project-column" data-wow-duration="1.25s">
+                    <div class="project-image-container">
+                        <img src="{{ object.image.url }}" alt="Фотография {{ object.title }}">
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-counter">0{{ forloop.counter }}</h2>
+                        <h3 class="project-title">{{ object.title }}</h3>
+                        <p class="project-description">{{ object.short_description }}</p>
+                        <a target="_blank" href="{{ object.link }}" class="project-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="project-content">
-                    <h1 class="project-title">{{ object.title }}</h1>
-                    <p class="project-description">{{ object.short_description }}</p>
-                    <a target="_blank" href="{{ object.link }}" class="project-link">View project</a>
-                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
-        <div class="view-all-project-container fade fadeInUp">
-            <a href="{% url 'main:projects' %}" class="view-all-list">View all projects</a>
+            <a href="{% url 'main:projects' %}" class="view-all-list">
+                <em>Все проекты</em>
+            </a>
         </div>
     </section>
 
