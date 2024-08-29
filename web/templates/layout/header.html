@@ -1,0 +1,30 @@
+{% load static %}
+<header class="header" id="header">
+    <nav class="site-navbar">
+        <div class="header-left-side">
+            <div class="header-logo-part">
+                <a href="/#mainInfo">
+                    <img src="{% static 'main/images/logo/logo.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="header-links-container">
+            <ul class="header-links-wrapper">
+                <li><a class="header-link" href="/#skills">Навыки</a></li>
+                <li><a class="header-link" href="/#experience">Опыт</a></li>
+                <li><a class="header-link" href="/#aboutMe">Профиль</a></li>
+                <li><a class="header-link" href="/#projects">Портфолио</a></li>
+                <li><a class="header-link" target="_blank" href="https://devcybercode.com/website/blogs/list">Блог</a></li>
+                <li><a class="header-link" href="/#contact">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="header-right-side">
+            <a href="{% static 'main/images/resume/myresume.pdf' %}" class="header-btn-contact">Резуюме</a>
+            <div class="menu-controller-container">
+                <button class="menu-icon" id="menu-icon">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>

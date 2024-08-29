@@ -1,12 +1,12 @@
 $error: #fb4d4d;
 $white: #ffffff;
 $black: #000000;
-$purple: #8828FF;
-$gray: #c4c4c4;
+$gray: #71717A;
+$light-gray: #D4D4D8;
 :root {
     --error: #{$error};
     --white: #{$white};
     --black: #{$black};
-    --purple: #{$purple};
     --gray: #{$gray};
+    --light-gray: #{$light-gray};
 }

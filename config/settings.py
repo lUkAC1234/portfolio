@@ -1,17 +1,11 @@
-
 from pathlib import Path
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-8ts4y19v^4dh!+wc+d0ub-rr15y+7r2#3#y-4d00oa-2rt)%(r'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
-
-# Application definition
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -20,7 +14,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
     'fontawesomefree',
 
     'web'
@@ -30,6 +24,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "django.middleware.locale.LocaleMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -48,7 +43,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates'
+            BASE_DIR / "web/templates"
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -64,25 +59,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'portfolio',
-        'USER': 'root',
+        'USER': 'postgres',
         'PASSWORD': 'dimatop12',
         'HOST': 'localhost',
         'PORT': '5432'
     }
 }
 
-
-# Password validation
-# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -99,20 +86,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Internationalization
-# https://docs.djangoproject.com/en/4.1/topics/i18n/
+LANGUAGE_CODE = 'EN-RU'
 
-LANGUAGE_CODE = 'EN'
-
-TIME_ZONE = 'Asia/Tashkent'
+TTIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
 USE_TZ = True
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
 
@@ -121,10 +101,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 STATICFILES_DIRS = BASE_DIR / 'assets',
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'web.UserModel'
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 20 * 1024 * 1024

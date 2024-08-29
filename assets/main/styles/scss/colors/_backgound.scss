@@ -1,8 +1,8 @@
 $body-background: #f3f3f3;
-$before-background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 100%);
-$box-background: linear-gradient(#0d0d0d,#151515);
+$scroolbar-dark: #111111;
+$dark-gray: #27272A;
 :root {
     --body-background: #{$body-background};
-    --before-background: #{$before-background};
-    --box-background: #{$box-background};
+    --scroolbar-dark: #{$scroolbar-dark};
+    --dark-gray: #{$dark-gray};
 }

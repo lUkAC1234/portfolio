@@ -3,6 +3,9 @@ from django.contrib.auth.models import AbstractUser
 from django.utils.translation import gettext_lazy as _
 from django.core.validators import RegexValidator
 
+class UserModel(AbstractUser):
+    pass
+
 class ProjectsModel(models.Model):
     title = models.CharField(max_length=100)
     image = models.ImageField(upload_to='projects/images/%Y/%m/%d/')

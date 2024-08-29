@@ -1,0 +1,256 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Portfolio</title>
+{% endblock %}
+
+{% block content %}
+<main class="main">
+
+    <section class="main-info-section" id="mainInfo">
+        <div class="main-info-container">
+            <div class="main-info-text-container">
+                <div class="main-info-text-column fade fadeInDown" data-wow-duration="1s">
+                    <h1 class="main-info-title">
+                        Я Шахобиддин — <span class="important-word">FullStack разработчик</span>
+                        воплощающий идеи в код из сердца Узбекистана
+                    </h1>
+                    <p class="main-info-text">
+                        Я увлекся разработкой в 12 лет и начал работать в <span class="important-word">веб-разработке</span> уже в
+                        14 лет. Мне сейчас 17 лет и за 4 года опыта я накопил знания и навыки, которые позволяют мне создавать уникальные и
+                        эффективные веб-решения
+                    </p>
+                </div>
+                <div class="main-info-social-medias-container">
+                    <a target="_blank" href="https://github.com/lUkAC1234" 
+                    class="main-info-social-media-column fade fadeInUp" data-wow-duration="1s">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/shaxobiddin-zuxriddinov-473110294/"
+                        class="main-info-social-media-column fade fadeInUp" data-wow-duration="1.25s">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://t.me/lUkACENkO1" 
+                    class="main-info-social-media-column fade fadeInUp" data-wow-duration="1.5s">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/i.really_miss.you_/"
+                        class="main-info-social-media-column fade fadeInUp" data-wow-duration="2s">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="main-info-image-container fade fadeInRight" data-wow-duration="2s">
+                <img src="{% static 'main/images/content/mainperson.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <div class="skills-container">
+            <h2 class="skills-main-title fade fadeInUp">Мои навыки</h2>
+            <div class="skills-wrapper">
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-brands fa-python"></i>
+                    <h3 class="skill-title">Python</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3 class="skill-title">HTML</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3 class="skill-title">Css</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-brands fa-sass"></i>
+                    <h3 class="skill-title">Sass/Scss</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-brands fa-js"></i>
+                    <h3 class="skill-title">JavaScript</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-brands fa-vuejs"></i>
+                    <h3 class="skill-title">Vue.js</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3 class="skill-title">Bootstrap</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-brands fa-react"></i>
+                    <h3 class="skill-title">React</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <i class="fa-solid fa-database"></i>
+                    <h3 class="skill-title">PostgreSQL</h3>
+                </div>
+                <div class="skill-column fade fadeInUp">
+                    <img src="{% static 'main/images/technologies/drf.svg' %}" alt="">
+                    <h3 class="skill-title">Rest</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <div class="experience-container"> 
+            <h2 class="experience-title fade fadeInUp">Мой опыт</h2>
+            <div class="experience-wrapper">
+                <div class="experience-column fade fadeInUp">
+                    <div class="experience-head-container">
+                        <div class="experience-head-left-side">
+                            <div class="experience-head-logo">
+                                <img src="" alt="">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <h2 class="experience-head-title">FullStack Developer</h2>
+                        </div>
+                        <div class="experience-head-data">
+                            Jan 2016 - Dec 2017
+                        </div>
+                    </div>
+                    <p class="experience-text">
+                        During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.
+                    </p>
+                </div>
+                <div class="experience-column fade fadeInUp">
+                    <div class="experience-head-container">
+                        <div class="experience-head-left-side">
+                            <div class="experience-head-logo">
+                                <img src="" alt="">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <h2 class="experience-head-title">FullStack Developer</h2>
+                        </div>
+                        <div class="experience-head-data">
+                            Jan 2016 - Dec 2017
+                        </div>
+                    </div>
+                    <p class="experience-text">
+                        During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.
+                    </p>
+                </div>
+                <div class="experience-column fade fadeInUp">
+                    <div class="experience-head-container">
+                        <div class="experience-head-left-side">
+                            <div class="experience-head-logo">
+                                <img src="" alt="">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <h2 class="experience-head-title">FullStack Developer</h2>
+                        </div>
+                        <div class="experience-head-data">
+                            Jan 2016 - Dec 2017
+                        </div>
+                    </div>
+                    <p class="experience-text">
+                        During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me-section" id="aboutMe">
+        <div class="about-me-container">
+            <div class="about-me-image-container">
+                <img src="{% static 'main/images/content/aboutme.svg' %}" alt="">
+            </div>
+            <div class="about-me-text-container">
+                <h2 class="about-me-title">Обо мне</h2>
+                <p class="about-me-text">
+                    I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
+                    <br><br>
+                    I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+                    <br><br>
+                    When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <h1 class="project-main-title fade slideInLeft" data-wow-duration="1.5s"><span class="gradient-text">My
+                Projects</span></h1>
+        <div class="projects-container">
+            {% for object in projects %}
+            <div class="project-column" data-wow-duration="1.25s">
+                <div class="project-image-container">
+                    <img src="{{ object.image.url }}" alt="">
+                </div>
+                <div class="project-content">
+                    <h1 class="project-title">{{ object.title }}</h1>
+                    <p class="project-description">{{ object.short_description }}</p>
+                    <a target="_blank" href="{{ object.link }}" class="project-link">View project</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="view-all-project-container fade fadeInUp">
+            <a href="{% url 'main:projects' %}" class="view-all-list">View all projects</a>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-title-content fade slideInLeft" data-wow-duration="1.5s">
+                <h1 class="contact-title">Get in touch</h1>
+                <p class="contact-text">if you want to ask me a <span class="gradient-text-second">question</span>, or
+                    if there are any problems, text me 😊</p>
+            </div>
+            <form class="contact-form" method="POST">
+                {% csrf_token %}
+                <div class="two-input-container">
+                    <div class="input-container">
+                        <input type="text" placeholder="First name" name="first_name">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Last name" name="last_name">
+                    </div>
+                </div>
+                <div class="one-input-container">
+                    <div class="input-container">
+                        <textarea placeholder="Message" name="description"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="gradient-background">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="work-together-section">
+        <div class="work-together-contaienr">
+            <h1 class="work-together-title fade slideInLeft" data-wow-duration="1s">Sold Yet? 🤙</h1>
+            <p class="work-together-text fade slideInLeft" data-wow-duration="1s">Thanks for stopping by, I’m currently
+                looking to join a new team of creative designers and developers. If you think we might be a good fit for
+                one another, send me an <a href="mailto:shaxobiddinzuxriddinov@gmail.com"
+                    class="gradient-text">email</a> 📧.</p>
+            <h2 class="work-together-text next fade slideInLeft" data-wow-duration="2s"><span class="gradient-text">Dont
+                    be a stranger!</span> 👋</h2>
+            <p class="work-connect-text fade slideInLeft" data-wow-duration="2.5s">Connect with me online</p>
+            <div class="connect-links-container">
+                <div class="connect-link-column fade fadeInUp" data-wow-duration="3s">
+                    <a target="_blank" href="https://github.com/lUkAC1234">👾 GitHub</a>
+                </div>
+                <div class="connect-link-column fade fadeInUp" data-wow-duration="3.5s">
+                    <a target="_blank" href="https://www.linkedin.com/in/shaxobiddin-zuxriddinov-473110294/">💼
+                        LinkedIn</a>
+                </div>
+                <div class="connect-link-column fade fadeInUp" data-wow-duration="4s">
+                    <a target="_blank" href="https://t.me/CyberCodeOwner">🐦 Telegram</a>
+                </div>
+                <div class="connect-link-column fade fadeInUp" data-wow-duration="4.5s">
+                    <a target="_blank" href="https://www.instagram.com/i.really_miss.you_/">📸 instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
+{% block js_block %}
+
+{% endblock %}

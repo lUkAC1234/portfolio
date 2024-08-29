@@ -1,17 +1,9 @@
-@import './poppins';
-@import './nunito';
-@import './grotext';
-@import './sans_serif';
+@import './ttravels';
 
 
-$sans: sans-serif;
-$grotext-sans: 'Space Grotesk',
-sans-serif;
-$nunito: 'Nunito', sans-serif;
-$poppins: 'Poppins';
+$ttravels: 'TTravels', system-ui, -apple-system, Segoe UI, roboto, Helvetica Neue, arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
 :root {
-    --grotext-sans: #{$grotext-sans} !important;
-    --sans: #{$sans} !important;
-    --nunito: #{$nunito} !important;
-    --poppins: #{$poppins} !important;
+    --ttravels: #{$ttravels} !important;
 }
+

@@ -20,34 +20,23 @@ strong {
   scroll-behavior: smooth !important;
 }
 
-@media screen and (min-width: 2000px) {
-  .main {
-    max-width: 2000px;
-    margin: 0 auto;
-    width: 100vw;
-  }
+:root {
+  --rem: 16px;
+  font-size: calc(var(--rem) + (20 - 16) * (100vw - 320px) / (1280 - 320));
 }
 
-@media screen and (min-width: 2500px) {
-  .main {
-    max-width: 2500px;
-  }
+@function calc-rem($min-width, $step, $max-scale) {
+  @return ();
 }
 
-@media screen and (min-width: 3000px) {
-  .main {
-    max-width: 3000px;
-  }
-}
-
-@media screen and (min-width: 3500px) {
-  .main {
-    max-width: 3500px;
-  }
-}
-
-@media screen and (min-width: 4000px) {
-  .main {
-    max-width: 4000px;
+@for $i from 0 through 29 {
+  $width: 2500px + $i * 500px;
+  $rem: 16px + $i * 2.5px;
+  @at-root {
+    @media screen and (min-width: #{$width}) {
+      :root {
+        --rem: #{$rem};
+      }
+    }
   }
 }
