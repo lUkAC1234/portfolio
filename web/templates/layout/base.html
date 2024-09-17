@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
-    <meta name="description" content="Собственной портфолио Шахоибиддина, был сделан в 2023 году, FullStack Web Developer">
-    <meta property="og:description" content="Собственной портфолио Шахоибиддина, был сделан в 2023 году, FullStack Web Developer">
-    <meta name="og:image" content="{% static 'main/images/layout/codecraftheader.svg' %}">
-    <meta name="keywords" content="Portfolio, Shaxobiddin, shaxobiddin, Shaxobiddin Portfolio, shaxobiddin portfolio, портфолио, Портфолио, Шахоибиддин, шахобиддин">
+    <meta name="description" content="Собственной портфолио Шахобиддина, был сделан в 2023 году, FullStack Web Developer">
+    <meta property="og:description" content="Собственной портфолио Шахобиддина, был сделан в 2023 году, FullStack Web Developer">
+    <meta name="og:image" content="{% static 'main/images/layout/ogimage.png' %}">
+    <meta name="og:title" content="Портфолио">
+    <meta name="keywords" content="Portfolio, Shaxobiddin, shaxobiddin, Shaxobiddin Portfolio, shaxobiddin portfolio, портфолио, Портфолио, Шахобиддин, шахобиддин">
     <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css" href="{% static 'main/styles/scss/global.css' %}">
@@ -21,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <!-- Animation End -->
 
-    {% block title %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>

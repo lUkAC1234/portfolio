@@ -1,14 +1,124 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Black Italic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Bold Italic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial DemiBold Italic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial DemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial ExtraBold Italic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial ExtraLight Italic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Light Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Medium Italic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Regular Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Thin Italic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TTravels";
+  src: url("/static/main/fonts/ttravels/TT Travels Trial Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+body {
+  color: var(--header-menu);
+}
+
 /* Base Colors */
 :root {
-  --primary-color: #20184E;
-  --purple: #8828FF;
+  --primary-color: #191b1d;
+  --purple: #191b1d;
   --light-gray: #D8E0F0;
-  --light-purple: #C08DFF;
-  --yellow: #FFDA58;
-  --white: #ffffff;
+  --light-purple: #fff;
+  --white: #b7babe;
   --input-background: #D8E0F0;
-  --poppins: "Poppins", "sans-serif";
+  --ttravels: TTravels, system-ui, -apple-system, Segoe UI, roboto, Helvetica Neue, arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
 }
 
 .aligned label + p,
@@ -24,7 +134,7 @@ h1,
 h2,
 li {
   color: var(--primary-color) !important;
-  font-family: var(--poppins) !important;
+  font-family: var(--ttravels) !important;
   font-weight: 500 !important;
   font-size: 1rem !important;
 }
@@ -34,7 +144,7 @@ body {
 }
 body #container #header {
   background: var(--purple);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
 }
 body #container #header #site-name a {
@@ -43,7 +153,7 @@ body #container #header #site-name a {
 }
 body #container .breadcrumbs {
   background: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
   font-size: 1.1rem;
   color: var(--light-gray);
@@ -58,7 +168,7 @@ body #container .shifted .sticky #nav-filter {
   border: none;
   outline: none;
   font-size: 1rem;
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
   border-bottom: 2px solid var(--primary-color);
   color: var(--primary-color);
@@ -73,7 +183,11 @@ body #container .shifted .messagelist .success {
   color: var(--white);
 }
 body #container .shifted .messagelist .success a {
-  color: var(--primary-color);
+  color: var(--white);
+}
+
+a:link, a:visited {
+  color: var(--white);
 }
 
 .toggle-nav-sidebar {
@@ -101,7 +215,7 @@ body #container .shifted .messagelist .success a {
 }
 #content .errorlist li,
 #content .errornote li {
-  font-family: var(--poppins) !important;
+  font-family: var(--ttravels) !important;
   color: var(--white) !important;
   text-align: center;
 }
@@ -113,21 +227,21 @@ body #container .shifted .messagelist .success a {
 #content .app-web tr a {
   border: none;
   color: var(--purple);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
 }
 #content #change-history .paginator {
   width: max-content;
   background: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   margin-top: 0.5rem;
   border-radius: 0 0 0 0.5rem;
 }
 #content #change-history thead th {
   background: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
 }
 #content #change-history tr {
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
 }
 #content #change-history tr:nth-child(odd) {
   background: var(--purple);
@@ -147,12 +261,12 @@ body #container .shifted .messagelist .success a {
 }
 #content form div:has(.cancel-link) input[type=submit] {
   background: var(--purple);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   height: fit-content;
 }
 #content form div:has(.cancel-link) .cancel-link {
   background: var(--white);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   color: var(--purple);
   padding-block: 0.75rem;
 }
@@ -160,7 +274,7 @@ body #container .shifted .messagelist .success a {
 #content .object-tools a:link,
 #content .object-tools a:visited {
   background-color: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
   color: var(--white);
 }
@@ -199,7 +313,7 @@ body #container .shifted .messagelist .success a {
 #content #changelist #toolbar div label {
   background: var(--white);
   color: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-size: 0.9rem;
   border: none;
   outline: none;
@@ -219,7 +333,7 @@ body #container .shifted .messagelist .success a {
 #content #changelist #changelist-form .actions,
 #content #changelist #changelist-form .paginator {
   background: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   color: var(--white);
   border-radius: 0.25rem;
   margin-block: 1rem;
@@ -233,7 +347,7 @@ body #container .shifted .messagelist .success a {
 #content #changelist #changelist-form .paginator select {
   background: var(--white);
   font-weight: 500;
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-size: 1rem;
   outline: none;
   border: none;
@@ -261,7 +375,7 @@ body #container .shifted .messagelist .success a {
 #content #changelist #changelist-form .results tr th,
 #content #changelist #changelist-form .results tr a {
   color: var(--white);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-size: 1rem;
 }
 
@@ -271,7 +385,7 @@ body #container .shifted .messagelist .success a {
 }
 .module caption {
   background: var(--purple);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
 }
 .module .model-group {
@@ -279,7 +393,7 @@ body #container .shifted .messagelist .success a {
 }
 .module .model-group a {
   color: var(--white);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
 }
 .module .model-group th,
@@ -300,10 +414,10 @@ body #container .shifted .messagelist .success a {
 .module .form-row .flex-container input,
 .module .form-row .flex-container textarea {
   border: 1px solid var(--input-background);
-  background: none;
+  background: var(--light-purple);
   outline: none;
   color: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
   width: calc(100% - 10px);
   min-width: calc(100% - 10px);
@@ -324,7 +438,7 @@ body #container .shifted .messagelist .success a {
 }
 .module .form-row .flex-container .file-upload {
   color: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
 }
 .module .form-row .flex-container .file-upload a {
@@ -333,7 +447,7 @@ body #container .shifted .messagelist .success a {
 .module .form-row .flex-container select {
   background: var(--purple);
   color: var(--white);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
   border: none;
   outline: none;
@@ -370,9 +484,9 @@ body #container .shifted .messagelist .success a {
 .submit-row input,
 .submit-row a.button,
 .submit-row .deletelink {
-  background: var(--white);
+  background: var(--light-purple);
   color: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   font-weight: 500;
   border: 1px solid transparent;
   outline: none;
@@ -414,7 +528,7 @@ body #container .shifted .messagelist .success a {
 }
 .main.shifted > #nav-sidebar .app-web table caption {
   background: var(--primary-color);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
   width: 90%;
   margin: 0.5rem auto;
   border-radius: 0.25rem;
@@ -429,7 +543,7 @@ body #container .shifted .messagelist .success a {
   border-radius: 0.25rem;
   width: 98%;
   background: var(--purple);
-  font-family: var(--poppins);
+  font-family: var(--ttravels);
 }
 .main.shifted > #nav-sidebar .app-web table tbody tr a {
   color: var(--white) !important;
@@ -438,6 +552,52 @@ body #container .shifted .messagelist .success a {
 .main.shifted > #nav-sidebar .app-web table tbody tr td,
 .main.shifted > #nav-sidebar .app-web table tbody tr th {
   border: none;
+}
+
+.module .flex-container .readonly {
+  color: var(--primary-color) !important;
+}
+
+#changelist-filter {
+  background-color: var(--white) !important;
+}
+
+#changelist-filter li.selected {
+  border-color: var(--purple) !important;
+}
+
+#changelist-filter li.selected a {
+  color: var(--purple) !important;
+}
+
+#changelist-filter details summary {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+#changelist-filter details > summary::before {
+  color: var(--purple) !important;
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+  background: var(--purple) !important;
+}
+
+#changelist-filter a {
+  color: var(--primary-color) !important;
+}
+#changelist-filter a:hover {
+  color: var(--purple) !important;
+}
+
+#changelist-filter h2 {
+  color: var(--white) !important;
+}
+
+#login-form .form-row label {
+  color: var(--white);
 }
 
 /*# sourceMappingURL=__admin.css.map */

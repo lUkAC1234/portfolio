@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
-from .models import ContactModel, ProjectsModel
+from .models import ContactModel, ProjectsModel, ExperienceModel
 from .forms import ContactForm
 from django.urls import reverse_lazy
 
@@ -12,7 +12,8 @@ class index(CreateView):
 
     def get_context_data(self, **kwargs):
         data = super().get_context_data(**kwargs)
-        data['projects'] = ProjectsModel.objects.all()[:6]
+        data['experiences'] = ExperienceModel.objects.all()
+        data['projects'] = ProjectsModel.objects.all()[:8]
         return data
     
 class ProjectsView(ListView):
